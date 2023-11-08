@@ -24,6 +24,8 @@ ReactDOM.render(
 // import { createTheme } from "@mui/material/styles";
 // import { ThemeProvider } from "@mui/styles";
 
+// const theme = createTheme({});
+
 // const container = document.getElementById("root");
 // const root = ReactDOM.createRoot(container);
 // root.render(<App />);
