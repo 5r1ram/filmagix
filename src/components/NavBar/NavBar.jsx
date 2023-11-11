@@ -6,6 +6,8 @@ import {
   Drawer,
   Button,
   Avatar,
+  Box,
+  CircularProgress,
   useMediaQuery,
 } from "@mui/material";
 import {
@@ -29,11 +31,12 @@ import { setUser, selectUser } from "../../features/auth";
 const NavBar = () => {
   const { isAuthenticated, user } = useSelector(selectUser);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const classes = useStyles();
   const isMobile = useMediaQuery("(max-width: 600px)");
   const theme = useTheme();
-  const dispatch = useDispatch();
   const colorMode = useContext(ColorModeContext);
+  const dispatch = useDispatch();
 
   const token = localStorage.getItem("request_token");
   const sessionIdFromLocalStorage = localStorage.getItem("session_id");
@@ -54,12 +57,22 @@ const NavBar = () => {
             `/account?session_id=${sessionId}`
           );
           dispatch(setUser(userData));
+
+          window.location.reload();
         }
+
+        setIsLoading(false);
       }
     };
 
     logIn();
-  }, [token]);
+  }, [token, dispatch, sessionIdFromLocalStorage]);
+
+  if (isLoading) {
+    <Box display="flex" justifyContent="center" alignItems="center">
+      <CircularProgress size="4rem" />
+    </Box>;
+  }
 
   // console.log(user);
 

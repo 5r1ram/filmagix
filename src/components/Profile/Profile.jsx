@@ -9,6 +9,7 @@ import {
   CardActionArea,
 } from "@mui/material";
 import { ExitToApp } from "@mui/icons-material";
+import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
 import useStyles from "./styles";
 
@@ -19,6 +20,7 @@ import { RatedCards } from "..";
 const Profile = () => {
   const classes = useStyles();
   const { user } = useSelector(selectUser);
+  const history = useHistory();
 
   const { data: favoriteMovies, refetch: refetchFavoriteMovies } =
     useGetListQuery({
