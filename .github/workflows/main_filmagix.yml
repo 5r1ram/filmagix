@@ -41,7 +41,8 @@ jobs:
         shell: pwsh
 
       - name: Archive files before uploading
-        run: zip -r node-app.zip ./build
+        run: |
+          Compress-Archive -Path ./build/* -DestinationPath node-app.zip
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
