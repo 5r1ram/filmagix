@@ -74,4 +74,4 @@ jobs:
           app-name: 'filmagix'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5F102479952A4209A5C5F37CD728FE2C }}
-          package: .
+          package: ./build
