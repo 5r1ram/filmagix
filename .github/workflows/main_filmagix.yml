@@ -26,7 +26,7 @@ jobs:
       #     export NODE_OPTIONS=--openssl-legacy-provider
       #     npm install
       #     npm run build --if-present
-      #     npm run test --if-present .
+      #     npm run test --if-present 
 
       - name: npm install, build, and test
         run: |
@@ -73,5 +73,5 @@ jobs:
         with:
           app-name: 'filmagix'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5F102479952A4209A5C5F37CD728FE2C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7T202479952A4209A5C5F37CD728GE7R }}
           package: .
