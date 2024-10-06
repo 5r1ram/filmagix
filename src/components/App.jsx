@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { CssBaseline } from "@mui/material";
 import {
   BrowserRouter as Router,
-  Routes,
+  Switch,
   Route,
   useLocation,
 } from "react-router-dom";
@@ -29,7 +29,7 @@ const App = () => {
         <NavBar />
         <main className={classes.content}>
           <div className={classes.toolbar} />
-          <Routes>
+          <Switch>
             <Route exact path="/movie/:id">
               <MovieInformation />
             </Route>
@@ -42,7 +42,7 @@ const App = () => {
             <Route exact path="/profile/:id">
               <Profile />
             </Route>
-          </Routes>
+          </Switch>
         </main>
         <div ref={alanBtnContainer} />
       </div>
