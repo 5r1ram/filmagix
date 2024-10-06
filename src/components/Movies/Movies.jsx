@@ -39,7 +39,7 @@ const Movies = () => {
     );
   }
 
-  if (!data.results.length) {
+  if (!data?.results?.length) {
     return (
       <Box display="flex" alignContent="center" mt="20px">
         <Typography variant="h4">
@@ -51,7 +51,17 @@ const Movies = () => {
     );
   }
 
-  if (error) return "An error has occured!";
+  // if (error) return "An error has occured!";
+
+  if (error) {
+    return (
+      <Box display="flex" justifyContent="center" alignItems="center" height="100vh">
+        <Typography variant="h6" color="error">
+          An error has occurred! {error.message || 'Unable to fetch movies.'}
+        </Typography>
+      </Box>
+    );
+  }
 
   return (
     <div>
@@ -60,7 +70,7 @@ const Movies = () => {
       <Pagination
         currentPage={page}
         setPage={setPage}
-        totalPages={data?.total_pages}
+        totalPages={data?.total_pages || 1}
       />
     </div>
   );

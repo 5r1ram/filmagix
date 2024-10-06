@@ -10,7 +10,7 @@ const RatedCards = ({ data, title }) => {
         {title}
       </Typography>
       <Box display="flex" flexWrap="wrap">
-        {data?.results.map((movie, i) => (
+        {data?.results?.map((movie, i) => (
           <Movie key={movie.id} movie={movie} i={i} />
         ))}
       </Box>
