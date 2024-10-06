@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/filmagix/static/css/main.f4481786.css",
-    "main.js": "/filmagix/static/js/main.22da2663.js",
+    "main.js": "/filmagix/static/js/main.4bdeba7f.js",
     "static/media/logo.png": "/filmagix/static/media/logo.1a912d35cffe17f26bb8.png",
     "static/media/mystery.png": "/filmagix/static/media/mystery.b0c5e41e4b603c56dd1b.png",
     "static/media/horror.png": "/filmagix/static/media/horror.c42fce34b4f89ff75b93.png",
@@ -26,10 +26,10 @@
     "static/media/music.png": "/filmagix/static/media/music.f492684efac2831f33da.png",
     "index.html": "/filmagix/index.html",
     "main.f4481786.css.map": "/filmagix/static/css/main.f4481786.css.map",
-    "main.22da2663.js.map": "/filmagix/static/js/main.22da2663.js.map"
+    "main.4bdeba7f.js.map": "/filmagix/static/js/main.4bdeba7f.js.map"
   },
   "entrypoints": [
     "static/css/main.f4481786.css",
-    "static/js/main.22da2663.js"
+    "static/js/main.4bdeba7f.js"
   ]
 }

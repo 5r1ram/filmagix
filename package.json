@@ -1,7 +1,7 @@
 {
   "name": "filmagix",
   "version": "0.1.0",
-  "homepage": "https://5r1ram.github.io/filmagix",
+  "homepage": "/filmagix",
   "private": true,
   "dependencies": {
     "@alan-ai/alan-sdk-web": "^1.8.28",
@@ -29,9 +29,7 @@
     "start-server": "node src/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test --passWithNoTests",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "browserslist": {
     "production": [
