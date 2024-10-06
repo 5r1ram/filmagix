@@ -12,7 +12,7 @@ ReactDOM.render(
   <Provider store={store}>
     {/* <ThemeProvider theme={theme}> */}
     <ToggleColorModeProvider>
-      <BrowserRouter basename="/filmagix">
+      <BrowserRouter>
         <App />
       </BrowserRouter>
     </ToggleColorModeProvider>

@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { CssBaseline } from "@mui/material";
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
   useLocation,
 } from "react-router-dom";
@@ -18,18 +18,18 @@ const App = () => {
   const alanBtnContainer = useRef();
   const location = useLocation();
 
-  const basename = location.pathname.startsWith("/filmagix") ? "/filmagix" : "";
+  // const basename = location.pathname.startsWith("/filmagix") ? "/filmagix" : "";
 
   useAlan();
 
   return (
-    <Router basename={basename}>
+    <Router>
       <div className={classes.root}>
         <CssBaseline />
         <NavBar />
         <main className={classes.content}>
           <div className={classes.toolbar} />
-          <Switch>
+          <Routes>
             <Route exact path="/movie/:id">
               <MovieInformation />
             </Route>
@@ -42,7 +42,7 @@ const App = () => {
             <Route exact path="/profile/:id">
               <Profile />
             </Route>
-          </Switch>
+          </Routes>
         </main>
         <div ref={alanBtnContainer} />
       </div>
