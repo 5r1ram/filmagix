@@ -28,6 +28,17 @@ ReactDOM.render(
 
 // const container = document.getElementById("root");
 // const root = ReactDOM.createRoot(container);
-// root.render(<App />);
+
+// root.render(
+//   <Provider store={store}>
+//   {/* <ThemeProvider theme={theme}> */}
+//   <ToggleColorModeProvider>
+//     <BrowserRouter>
+//       <App />
+//     </BrowserRouter>
+//   </ToggleColorModeProvider>
+//   {/* </ThemeProvider> */}
+// </Provider>
+// );
 
 // const theme = createTheme({});

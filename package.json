@@ -1,7 +1,7 @@
 {
   "name": "filmagix",
   "version": "0.1.0",
-  "homepage": "/filmagix",
+  "homepage": "filmagixx-d7cfaggncqakbfgs.canadacentral-01.azurewebsites.net/filmagix",
   "private": true,
   "dependencies": {
     "@alan-ai/alan-sdk-web": "^1.8.28",
