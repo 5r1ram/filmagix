@@ -19,6 +19,7 @@ const App = () => {
   const location = useLocation();
 
   // const basename = location.pathname.startsWith("/filmagix") ? "/filmagix" : "";
+  // console.log("")
 
   useAlan();
 
