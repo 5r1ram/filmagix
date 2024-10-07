@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f4481786.css",
+    "main.js": "/static/js/main.a31a538c.js",
+    "static/media/logo.png": "/static/media/logo.1a912d35cffe17f26bb8.png",
+    "static/media/mystery.png": "/static/media/mystery.b0c5e41e4b603c56dd1b.png",
+    "static/media/horror.png": "/static/media/horror.c42fce34b4f89ff75b93.png",
+    "static/media/comedy.png": "/static/media/comedy.af552b5a1b9aab588b62.png",
+    "static/media/popular.png": "/static/media/popular.02b76b9977452f2a0059.png",
+    "static/media/upcoming.png": "/static/media/upcoming.3c42e871c18afa05b1b5.png",
+    "static/media/western.png": "/static/media/western.c875176d07aa23623496.png",
+    "static/media/adventure.png": "/static/media/adventure.938118b4a73dc9a3d080.png",
+    "static/media/science fiction.png": "/static/media/science fiction.43d30ff381b7741cfbf4.png",
+    "static/media/history.png": "/static/media/history.c0a9c8b95b4c15e78a79.png",
+    "static/media/romance.png": "/static/media/romance.7ebe0630bbb21d4eb994.png",
+    "static/media/drama.png": "/static/media/drama.4fa693aa91008fbc744c.png",
+    "static/media/documentary.png": "/static/media/documentary.f1aa908a73acd3099c43.png",
+    "static/media/family.png": "/static/media/family.d1702c05725623224cdd.png",
+    "static/media/thriller.png": "/static/media/thriller.a96e70896aa345dda401.png",
+    "static/media/tv movie.png": "/static/media/tv movie.e4901266b13feeb48f54.png",
+    "static/media/top rated.png": "/static/media/top rated.5708bc0a7417d4d813dd.png",
+    "static/media/war.png": "/static/media/war.ab87bbad09d0781f50f5.png",
+    "static/media/fantasy.png": "/static/media/fantasy.6f53441d4d44c0c82585.png",
+    "static/media/animation.png": "/static/media/animation.c0d5eef5b7af0a96521e.png",
+    "static/media/crime.png": "/static/media/crime.0a8b640ef13a240178f3.png",
+    "static/media/music.png": "/static/media/music.f492684efac2831f33da.png",
+    "index.html": "/index.html",
+    "main.f4481786.css.map": "/static/css/main.f4481786.css.map",
+    "main.a31a538c.js.map": "/static/js/main.a31a538c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4481786.css",
+    "static/js/main.a31a538c.js"
+  ]
+}
