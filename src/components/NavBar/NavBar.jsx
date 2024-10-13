@@ -75,6 +75,7 @@ const NavBar = () => {
   }
 
   // console.log(user);
+  
 
   return (
     <>
