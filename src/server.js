@@ -5,7 +5,9 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors());
+app.use(cors({
+  origin: "filmagixx-d7cfaggncqakbfgs.canadacentral-01.azurewebsites.net"
+}));
 
 app.use(express.static(path.join(__dirname, "build")));
 
