@@ -1,5 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
+console.log(process.env.REACT_APP_TMDB_KEY);
+
 const tmdbApiKey = process.env.REACT_APP_TMDB_KEY;
 // https://api.themoviedb.org/3/movie/popular?api_key=<<api_key>>&language=en-US&page=1
 
