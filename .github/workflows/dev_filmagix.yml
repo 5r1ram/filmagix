@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  WEBAPP_NAME: "filmagixx"
+  WEBAPP_NAME: "filmagix"
   APPLICATION_PUBLISH_PROFILE: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FF9C20CB25C746D8992C58025066E27A }}
 
 jobs:
