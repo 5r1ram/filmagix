@@ -9,6 +9,7 @@ on:
 env:
   WEBAPP_NAME: "filmagix"
   APPLICATION_PUBLISH_PROFILE: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FF9C20CB25C746D8992C58025066E27A }}
+  API_KEY: ${{ secrets.REACT_APP_TMDB_KEY }}
 
 jobs:
   build:
@@ -27,6 +28,9 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
+
+      - name: "Use API Key"
+        run: echo "$Env:API_KEY"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
